@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 public class Interactor : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,7 +19,7 @@ public class Interactor : MonoBehaviour
                 Debug.Log(collider);
 
                 if (collider.TryGetComponent(out NPCInteract npcInteract)) {
-                    npcInteract.interact();
+                    npcInteract.Interact();
                 }
             }
         }
