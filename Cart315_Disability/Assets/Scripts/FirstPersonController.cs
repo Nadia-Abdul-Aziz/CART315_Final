@@ -23,6 +23,14 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private PlayerInputHandler playerInputHandler;
 
+    [Header("Head Bob")]
+    [SerializeField] private float bobFrequency = 8f;
+    [SerializeField] private float bobAmplitude = 0.09f;
+    [SerializeField] private float bobSmoothSpeed = 10f;
+    [SerializeField] private float sprintBobMultiplier = 1.5f;
+
+private float bobTimer;
+private Vector3 cameraInitialLocalPosition;
     private Vector3 currentMovement;
     private float verticalRotation;
     private float CurrentSpeed => walkSpeed * (playerInputHandler.SprintTriggered ? sprintMultiplier : 1);
@@ -32,6 +40,8 @@ public class FirstPersonController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        cameraInitialLocalPosition = mainCamera.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -39,6 +49,7 @@ public class FirstPersonController : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
+        HandleHeadBob();
     }
 
     private Vector3 CalculateWorldDDirection()
@@ -47,6 +58,42 @@ public class FirstPersonController : MonoBehaviour
         Vector3 worldDirection = transform.TransformDirection(inputDirection);
         return worldDirection.normalized;
     }
+
+//New stuff for bobbing
+private void HandleHeadBob()
+{
+    bool isMoving = playerInputHandler.MovementInput.sqrMagnitude > 0.01f;
+    bool isGrounded = characterController.isGrounded;
+
+    Vector3 targetPosition = cameraInitialLocalPosition;
+
+    if (isMoving && isGrounded)
+    {
+        float frequency = bobFrequency;
+        float amplitude = bobAmplitude;
+
+        if (playerInputHandler.SprintTriggered)
+        {
+            frequency *= sprintBobMultiplier;
+            amplitude *= sprintBobMultiplier;
+        }
+
+        bobTimer += Time.deltaTime * frequency;
+
+        float bobOffsetY = Mathf.Sin(bobTimer) * amplitude;
+        targetPosition.y += bobOffsetY;
+    }
+    else
+    {
+        bobTimer = 0f;
+    }
+
+    mainCamera.transform.localPosition = Vector3.Lerp(
+        mainCamera.transform.localPosition,
+        targetPosition,
+        Time.deltaTime * bobSmoothSpeed
+    );
+}
 
     private void HandleJumping()
     {
