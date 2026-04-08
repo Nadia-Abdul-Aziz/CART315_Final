@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/dialogue.uss?fileID=7433441132597879392&amp;guid=b400bcc35db491943aa5b89fe115f95c&amp;type=3#dialogue"/>
+    <ui:VisualElement style="flex-grow: 1; position: absolute; bottom: 0; align-self: center; margin-bottom: 108px; margin-top: 0; margin-right: 0; margin-left: 0; padding-top: 26px; padding-right: 26px; padding-bottom: 26px; padding-left: 26px; background-color: rgb(178, 178, 178); width: 70%; height: 20%;">
+        <ui:Label text="NPC Name"/>
+        <ui:Label text="Dialogue box!!!!!!!!!!!!!!!!!!!!" class="textbox" style="align-self: center; align-content: flex-end; bottom: 0; justify-content: flex-end; -unity-text-align: lower-left;"/>
+    </ui:VisualElement>
+</ui:UXML>

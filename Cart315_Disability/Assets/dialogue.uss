@@ -1,0 +1,12 @@
+.textbox {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    align-items: center;
+    right: auto;
+    align-self: center;
+    top: auto;
+}
+
+.narrator {
+}
