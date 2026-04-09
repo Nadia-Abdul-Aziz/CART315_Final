@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/dialogue.uss?fileID=7433441132597879392&amp;guid=b400bcc35db491943aa5b89fe115f95c&amp;type=3#dialogue"/>
+    <ui:VisualElement name="DialogueBox" class="box">
+        <ui:Label text="NPC NAME" name="NPCName" class="narrator" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/static/Lora-Bold.ttf?fileID=12800000&amp;guid=b91fa9b67147c2a409555ce7c6e3deba&amp;type=3#Lora-Bold&quot;);"/>
+        <ui:Label text="Dialogue text goes here." name="DialogueLabel" class="textbox" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/static/Lora-Medium.ttf?fileID=12800000&amp;guid=9d338a054e8fb2b49a8d81fef6920196&amp;type=3#Lora-Medium&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

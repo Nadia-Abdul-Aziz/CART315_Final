@@ -1,0 +1,45 @@
+.header {
+    width: auto;
+    font-size: 40px;
+    color: rgb(226, 196, 200);
+    -unity-text-align: middle-center;
+    margin-top: 263px;
+    margin-bottom: 83px;
+}
+
+.button {
+    font-size: 34px;
+    width: 220px;
+    height: 60px;
+    align-items: center;
+    align-self: center;
+    margin-top: 16px;
+    background-color: rgba(49, 44, 95, 0.82);
+    -unity-font-definition: url("project://database/Assets/Fonts/static/Lora-Regular.ttf?fileID=12800000&guid=50e12e4530e442241b26d024e337a21f&type=3#Lora-Regular");
+    text-shadow: 0 0 0 rgb(255, 240, 245);
+    color: rgb(255, 240, 245);
+    border-top-width: -146px;
+    border-right-width: -146px;
+    border-bottom-width: -146px;
+    border-left-width: -146px;
+    border-left-color: rgba(13, 13, 51, 0.39);
+    border-right-color: rgba(13, 13, 51, 0.39);
+    border-top-color: rgba(13, 13, 51, 0.39);
+    border-bottom-color: rgba(13, 13, 51, 0.39);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgba(65, 95, 130, 0.9);
+    border-color: rgba(209, 143, 130, 0.6);
+    color: rgb(240, 215, 210);
+}
+
+.button:active {
+    background-color: rgba(30, 50, 75, 0.95);
+    border-color: rgba(226, 196, 200, 0.8);
+    color: rgb(255, 235, 230);
+}
