@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/UI Elements.unity
+    guid: 3991853587aec994a9c81aa18050bebf
+  - enabled: 1
+    path: Assets/Scenes/Test Alex.unity
+    guid: eaa4be2f716edf54f942d54b4cc1c63b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
