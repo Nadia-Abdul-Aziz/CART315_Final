@@ -8,7 +8,6 @@ public class uiMainMenu : MonoBehaviour
     private Button optionsButton;
     private Button quitButton;
 
-
     void OnEnable()
     {
 
