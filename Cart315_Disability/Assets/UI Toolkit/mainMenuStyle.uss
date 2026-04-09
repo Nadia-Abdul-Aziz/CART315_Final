@@ -31,3 +31,15 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
+.button:hover {
+    background-color: rgba(65, 95, 130, 0.9);
+    border-color: rgba(209, 143, 130, 0.6);
+    color: rgb(240, 215, 210);
+}
+
+.button:active {
+    background-color: rgba(30, 50, 75, 0.95);
+    border-color: rgba(226, 196, 200, 0.8);
+    color: rgb(255, 235, 230);
+}

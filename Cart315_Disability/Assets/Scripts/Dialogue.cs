@@ -41,7 +41,14 @@ public class Dialogue : MonoBehaviour
                 dialogueBox.style.display = DisplayStyle.Flex;
                 npcName.text = lines[dialogueIndex].speaker;
                 dialogueLabel.text = lines[dialogueIndex].line;
-                dialogueIndex++;
+                        if (lines[dialogueIndex].line.Contains("pain"))
+{
+    dialogueBox.style.backgroundColor = new StyleColor(new Color(42f/255f, 40f/255f, 44f/255f, 0.88f));
+dialogueLabel.style.color = new StyleColor(new Color(172f/255f, 168f/255f, 170f/255f));
+dialogueLabel.style.unityFontStyleAndWeight = FontStyle.Italic;
+npcName.style.color = new StyleColor(new Color(140f/255f, 136f/255f, 138f/255f));
+}
+              
             }
             else
             {
@@ -49,14 +56,9 @@ public class Dialogue : MonoBehaviour
                 dialogueBox.style.display = DisplayStyle.None;
                 dialogueIndex = 0;
             }
+              dialogueIndex++;
         }
-        if (lines[dialogueIndex].line.Contains("pain"))
-{
-    dialogueBox.style.backgroundColor = new StyleColor(new Color(42f/255f, 40f/255f, 44f/255f, 0.88f));
-dialogueLabel.style.color = new StyleColor(new Color(172f/255f, 168f/255f, 170f/255f));
-dialogueLabel.style.unityFontStyleAndWeight = FontStyle.Italic;
-npcName.style.color = new StyleColor(new Color(140f/255f, 136f/255f, 138f/255f));
-}
+
 
     }
 

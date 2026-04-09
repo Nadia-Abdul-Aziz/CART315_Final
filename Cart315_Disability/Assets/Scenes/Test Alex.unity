@@ -901,12 +901,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737958993}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 134.9018, y: -338.98407, z: 9.224054}
+  m_LocalScale: {x: 57.65035, y: 57.65035, z: 57.65035}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1227731623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &737958996
 MonoBehaviour:
@@ -1356,6 +1356,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   uiDocument: {fileID: 737958994}
+--- !u!4 &1227731623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1392919610703202709, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
+  m_PrefabInstance: {fileID: 6143992938789838432}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1227731624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1671,7 +1676,7 @@ GameObject:
   - component: {fileID: 1387415101}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2818,7 +2823,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1392919610703202709, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737958995}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1227482862053547260, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
       insertIndex: -1
@@ -2932,7 +2940,6 @@ SceneRoots:
   - {fileID: 2071800363}
   - {fileID: 1770682248}
   - {fileID: 6143992938789838432}
-  - {fileID: 737958995}
   - {fileID: 9211085429756083634}
   - {fileID: 1122094539}
   - {fileID: 681136395}
