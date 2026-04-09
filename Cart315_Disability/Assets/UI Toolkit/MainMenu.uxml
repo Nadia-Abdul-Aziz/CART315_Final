@@ -1,8 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/mainMenuStyle.uss?fileID=7433441132597879392&amp;guid=03724293ca0327349b6d6d0b9891d63b&amp;type=3#mainMenuStyle"/>
     <ui:VisualElement name="Container" style="flex-grow: 1;">
-        <ui:Label text="Main Menu" name="header" class="header" style="align-self: center; justify-content: space-between; align-content: auto; -unity-text-align: middle-center;"/>
-        <ui:Button text="Start" name="StartButton" class="button"/>
+        <ui:Label text="Main Menu" name="header" class="header" style="align-self: center; justify-content: space-between; align-content: auto; -unity-text-align: middle-center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/static/Lora-Bold.ttf?fileID=12800000&amp;guid=b91fa9b67147c2a409555ce7c6e3deba&amp;type=3#Lora-Bold&quot;); color: rgb(255, 240, 245); font-size: 79px;"/>
+        <ui:Button text="Start" name="StartButton" class="button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/static/Lora-Regular.ttf?fileID=12800000&amp;guid=50e12e4530e442241b26d024e337a21f&amp;type=3#Lora-Regular&quot;);"/>
         <ui:Button text="Settings" name="OptionsButton" class="button"/>
         <ui:Button text="Quit" name="QuitButton" class="button"/>
     </ui:VisualElement>

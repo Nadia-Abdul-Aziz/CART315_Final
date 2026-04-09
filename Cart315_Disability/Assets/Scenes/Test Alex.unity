@@ -902,11 +902,11 @@ Transform:
   m_GameObject: {fileID: 737958993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.51504, y: -0.95858, z: -6.66039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1442098451}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &737958996
 MonoBehaviour:
@@ -1356,8 +1356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   uiDocument: {fileID: 737958994}
---- !u!135 &1227731620
-SphereCollider:
+--- !u!65 &1227731624
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1375,7 +1375,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 100
+  m_Size: {x: 400, y: 800, z: 400}
   m_Center: {x: -8.311217, y: -8.835845, z: -0.20265387}
 --- !u!1 &1231849926
 GameObject:
@@ -1812,7 +1812,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1076523741}
-  - {fileID: 737958995}
   - {fileID: 498199956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2823,10 +2822,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1227482862053547260, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1227731620}
+      addedObject: {fileID: 1227731619}
     - targetCorrespondingSourceObject: {fileID: 1227482862053547260, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1227731619}
+      addedObject: {fileID: 1227731624}
   m_SourcePrefab: {fileID: 100100000, guid: cd52a1a6caa96584b8359ac96cf6c377, type: 3}
 --- !u!33 &6269985093536777464
 MeshFilter:
@@ -2933,6 +2932,7 @@ SceneRoots:
   - {fileID: 2071800363}
   - {fileID: 1770682248}
   - {fileID: 6143992938789838432}
+  - {fileID: 737958995}
   - {fileID: 9211085429756083634}
   - {fileID: 1122094539}
   - {fileID: 681136395}

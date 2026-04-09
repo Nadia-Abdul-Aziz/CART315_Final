@@ -1,12 +1,39 @@
-.textbox {
-    bottom: 0;
-    left: 0;
-    position: relative;
-    align-items: center;
-    right: auto;
+.box {
+    position: absolute;
+    bottom: 48px;
+    left: 15%;
+    right: 15%;
     align-self: center;
-    top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background-color: rgba(45, 68, 98, 0.88);
+    border-color: rgba(9, 12, 51, 0.3);
+    border-width: 4px;
+    border-radius: 10px;
+    border-width: -144px;
 }
 
 .narrator {
+  
+    font-size: 48px;
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: rgb(247, 227, 223);
+    -unity-text-align: upper-left;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.textbox {
+
+    font-size: 32px;
+    -unity-font-style: normal;
+    color: rgb(255, 240, 245);
+    -unity-text-align: upper-left;
+    white-space: normal;
+    letter-spacing: 0.3px;
 }
