@@ -1959,7 +1959,7 @@ MonoBehaviour:
   treeTypes:
   - enabled: 1
     name: TreeObject
-    seed: 249
+    seed: 1359
     probability: 100
     collisionCheck: 1
     rejectUnderwater: 0
@@ -1967,10 +1967,10 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 60}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 1065
+    instanceCount: 289
     prefabs:
     - index: 0
-      probability: 100
+      probability: 25
       prefab: {fileID: 7405871593630520800, guid: 922dcd8d25f9a5643a6367012966a910, type: 3}
     distance: 5
     scaleRange: {x: 0.8, y: 1.2}
