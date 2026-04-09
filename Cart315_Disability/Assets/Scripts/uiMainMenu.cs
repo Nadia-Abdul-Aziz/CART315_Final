@@ -8,6 +8,8 @@ public class uiMainMenu : MonoBehaviour
     private Button optionsButton;
     private Button quitButton;
 
+    private int GameSceneIndex = 0;
+
     void OnEnable()
     {
 
@@ -35,12 +37,14 @@ public class uiMainMenu : MonoBehaviour
 
     void OnStartClicked()
     {
+        SceneManager.LoadScene(GameSceneIndex);
+
         GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         UnityEngine.Cursor.visible = false;
 
-        FindObjectOfType<PlayerInputHandler>().enabled = true;
-
+        //FindObjectOfType<PlayerInputHandler>().enabled = true;
+        
         Debug.Log("START CLICKED");
 
     }
