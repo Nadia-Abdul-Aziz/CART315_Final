@@ -35,7 +35,9 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if (playerNearby && Input.GetKeyDown(KeyCode.E))
-        {
+        {           
+            SoundManager.PlaySound(SoundType.Interact);
+
             if (dialogueIndex < lines.Length)
             {
                 dialogueBox.style.display = DisplayStyle.Flex;
@@ -68,6 +70,8 @@ public class Dialogue : MonoBehaviour
         {
             playerNearby = true;
             dialogueIndex = 0;
+            //e to interact 
+            
         }
     }
 
