@@ -1226,7 +1226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c323cf095d34d499f06a31445f5c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  playerInputHandler: {fileID: 153118363}
 --- !u!1 &1122094536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,7 +1375,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2
+  m_Radius: 100
   m_Center: {x: -8.311217, y: -8.835845, z: -0.20265387}
 --- !u!1 &1231849926
 GameObject:
