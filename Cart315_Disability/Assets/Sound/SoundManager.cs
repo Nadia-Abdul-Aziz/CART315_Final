@@ -1,16 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
 public enum SoundType
-{
 
+{
 Walk1,
 Walk2,
 Jump,
 Click,
 Interact,
-Dialogue,
-
+Dialogue
 }
 public class SoundManager : MonoBehaviour
 {
@@ -35,7 +33,7 @@ public class SoundManager : MonoBehaviour
     public static void PlaySound(SoundType sound, float volume = 1)
     {
     
-    instance.audioSource.PlayOneShot(instance.soundlist[(int)sound], volume);
+    instance.audioSource.PlayOneShot(instance.soundList[(int)sound], volume);
 
     }
 }

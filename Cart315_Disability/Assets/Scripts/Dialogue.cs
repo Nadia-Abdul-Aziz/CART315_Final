@@ -15,10 +15,10 @@ public class Dialogue : MonoBehaviour
     private (string speaker, string line)[] lines = new (string, string)[]
     {
         ("JORDAN", "Ugh. This just feels… heavy?"),
-        ("DOG WALKER", "They say the statue is about resilience."),
+        ("HIKER", "They say the statue is about resilience."),
         ("JORDAN", "It looks like anybody to me."),
-        ("DOG WALKER", "Hm."),
-        ("DOG WALKER", "Fair enough. I guess you don't see yourself in it."),
+        ("HIKER", "Hm."),
+        ("HIKER", "Fair enough. I guess you don't see yourself in it."),
         ("JORDAN", "What does that even mean? I'm not resilient? It's not because I feel pain differently that I don't feel pain at all. What would he even know about —"),
     };
 
