@@ -15,6 +15,10 @@ public class Dialogue_Object
         return dialogueLines;
     }
 
+    public string[] GetDialogueLine(int index){
+        return dialogueLines[index];
+    }
+
     public void NewDialogueLines(string[] line){
         dialogueLines.Add(line);
     }
