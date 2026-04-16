@@ -1,4 +1,4 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/interactionsStyle.uss?fileID=7433441132597879392&amp;guid=34e7c93e72bd8454a92643d76a7c304b&amp;type=3#interactionsStyle"/>
-    <ui:Label text="Interact" enabled="true" style="font-size: 20px;"/>
+    <ui:Label text="E to Interact" enabled="true" name="Interact" style="font-size: 20px; background-color: rgba(127, 127, 127, 0.44); width: 260px; white-space: nowrap; -unity-text-align: upper-center; right: auto; bottom: auto; left: 45%; position: absolute; top: 46%;"/>
 </ui:UXML>

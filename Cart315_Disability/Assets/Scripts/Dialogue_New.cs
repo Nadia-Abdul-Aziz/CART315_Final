@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class Dialogue_New : MonoBehaviour
 {
@@ -9,16 +11,15 @@ public class Dialogue_New : MonoBehaviour
         Hiker
     }
 
-    public List<Dialogue_Object>[] dialogues;
+    public List<Dialogue_Object>[] dialogues = new List<Dialogue_Object>[System.Enum.GetValues(typeof(NPCNames)).Length];
     private VisualElement dialogueBox;
     private Label dialogueLabel;
     private Label npcName;
 
     
 
-    void Start()
+    void Awake()
     {
-        dialogues = new List<Dialogue_Object>[System.Enum.GetValues(typeof(NPCNames)).Length];
         for (int i = 0; i < dialogues.Length; i++)
         {
             dialogues[i] = new List<Dialogue_Object>();
@@ -53,26 +54,14 @@ public class Dialogue_New : MonoBehaviour
         dialogues[(int)NPCNames.Hiker].Add(dialogue1);
     }
 
-    void playDialogue(NPCNames npc, int dialogueIndex)
+    public int GetDialogueAmount(NPCNames npc)
     {
-        int dialogueLength = dialogues[(int)npc][dialogueIndex].GetDialogueLines().Count;
-        for (int i = 0; i < dialogueLength; i++)
-        {
-            string[] line = dialogues[(int)npc][dialogueIndex].GetDialogueLines(i);
-            
-            dialogueBox.style.display = DisplayStyle.Flex;
+        return dialogues[(int)npc].Count;
+    }
 
-            npcName.text = line[0];
-            dialogueLabel.text = line[1];
-            if (line[1].Contains("pain"))
-            {
-                dialogueBox.style.backgroundColor = new StyleColor(new Color(42f/255f, 40f/255f, 44f/255f, 0.88f));
-                dialogueLabel.style.color = new StyleColor(new Color(172f/255f, 168f/255f, 170f/255f));
-                dialogueLabel.style.unityFontStyleAndWeight = FontStyle.Italic;
-                npcName.style.color = new StyleColor(new Color(140f/255f, 136f/255f, 138f/255f));
-            }
-            
-        }
+    public List<Dialogue_Object> GetDialogue(NPCNames npc)
+    {
+        return dialogues[(int)npc];
     }
 
 }

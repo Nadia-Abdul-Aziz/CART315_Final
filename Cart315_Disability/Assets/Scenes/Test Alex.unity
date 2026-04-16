@@ -129,19 +129,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
   m_PrefabInstance: {fileID: 1636531688}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &111820487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111820484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464a001871746544eb2e4c80e2c6dadd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  uiDocument: {fileID: 737958994}
 --- !u!65 &111820488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -554,11 +541,11 @@ Transform:
   m_GameObject: {fileID: 498199954}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.51504, y: -0.95858, z: -6.66039}
+  m_LocalPosition: {x: -0.64273214, y: 0, z: -6.5834146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1442098451}
+  m_Father: {fileID: 111820486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &509395158
 GameObject:
@@ -906,7 +893,6 @@ GameObject:
   m_Component:
   - component: {fileID: 737958995}
   - component: {fileID: 737958994}
-  - component: {fileID: 737958996}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -952,19 +938,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 111820486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737958996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737958993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464a001871746544eb2e4c80e2c6dadd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  uiDocument: {fileID: 737958994}
 --- !u!1 &895434852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 015b49fb030fb84469571d1e9ee8d8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcNames: 0
+  uiDocument: {fileID: 0}
+  interactUIDocument: {fileID: 0}
 --- !u!1 &1003369858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2243,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1076523741}
-  - {fileID: 498199956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523198951 stripped
@@ -2296,6 +2271,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008, y: 0.0087544955, z: 0.012}
   m_Center: {x: 0, y: 0.0043772478, z: -0.002}
+--- !u!114 &1523198959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523198951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015b49fb030fb84469571d1e9ee8d8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteract
+  npcNames: 0
+  uiDocument: {fileID: 1076523740}
+  interactUIDocument: {fileID: 498199955}
 --- !u!1 &1554065144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,22 +2543,25 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: -1
       addedObject: {fileID: 737958995}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 498199956}
     - targetCorrespondingSourceObject: {fileID: 6515712193588681746, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: 0
       addedObject: {fileID: 308668782}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 111820487}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 111820488}
     - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1873653579}
+      addedObject: {fileID: 1873653582}
     - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1873653578}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1873653583}
     - targetCorrespondingSourceObject: {fileID: -1781356600409242780, guid: a58455ff5c97e874fa2105fd17cb1077, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1718066619}
@@ -2976,6 +2969,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79501a5a92a95d0419c2941bb4f5b009, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1523198955}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 79501a5a92a95d0419c2941bb4f5b009, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1523198959}
   m_SourcePrefab: {fileID: 100100000, guid: 79501a5a92a95d0419c2941bb4f5b009, type: 3}
 --- !u!1 &1873653575 stripped
 GameObject:
@@ -3003,7 +2999,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.72, y: 4.76, z: 3.72}
   m_Center: {x: -0.01346136, y: 1.8635455, z: -0.033471853}
---- !u!114 &1873653579
+--- !u!114 &1873653582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873653575}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015b49fb030fb84469571d1e9ee8d8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteract
+  npcNames: 1
+  uiDocument: {fileID: 737958994}
+  interactUIDocument: {fileID: 498199955}
+--- !u!114 &1873653583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

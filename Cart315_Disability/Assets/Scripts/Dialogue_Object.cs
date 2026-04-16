@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Dialogue_Object
 {
@@ -15,7 +16,7 @@ public class Dialogue_Object
         return dialogueLines;
     }
 
-    public string[] GetDialogueLine(int index){
+    public string[] GetDialogueLines(int index){
         return dialogueLines[index];
     }
 
