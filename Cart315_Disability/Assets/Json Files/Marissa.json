@@ -1,0 +1,12 @@
+[
+    {"speaker": "MARISSA", "text": "Oh Jordan! It’s been so long!"},
+    {"speaker": "YOU", "text": "Hey Marissa, it’s been a while…since college"},
+    {"speaker": "MARISSA", "text": "You look different… How have you been?"},
+    {"speaker": "YOU", "text": "You know… I've actually been struggling a bit after colle… (Gets cut)"},
+    {"speaker": "MARISSA", "text": "Oh I'm so sorry, that must be hard…I got my dream job!!!! I work at XXX!!!!"},
+    {"speaker": "YOU", "text": "That’s amazing Marissa, I’m so happy for you"},
+    {"speaker": "MARISSA", "text": "Oh my god Jordan, I need to tell you everything!!!! I graduated college with a 4.0 and I got hired right out of my internship, they extended my contract!!!"},
+    {"speaker": "MARISSA", "text": "And i’ve been working with them since!! I’ve been with my amazing boyfriend for three years now and I love my life. I am happy and healthy, and I have been taking these kayaking classes..."},
+    {"speaker": "YOU", "text": "I’d love to hear all about this Marissa but I’m not in the right headspace. I'm so sorry, want to catch up another time?"},
+    {"speaker": "MARISSA", "text": "Rude..."}
+]
